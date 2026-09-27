@@ -3,6 +3,21 @@
   "siteName": "라쿠텐 트래블 할인코드",
   "baseUrl": "https://rkt.exp-offer.co.kr",
   "postUrlPattern": "/blog/{slug}/",
-  "updated": "2026-09-23",
-  "posts": []
+  "updated": "2026-09-27",
+  "posts": [
+    {
+      "title": "라쿠텐 트래블 할인코드 사용 조건 총정리",
+      "slug": "rakuten-travel-discount-code-conditions",
+      "date": "2026-09-27",
+      "description": "라쿠텐 트래블 할인코드의 종류와 할인율, 카드 조건을 정리했습니다. 예약 전 코드 적용 여부와 유효기간 등 확인해두면 좋은 점들을 함께 안내합니다.",
+      "image": "https://images.unsplash.com/photo-1778510092995-2784cdadeda2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDc5NTczfDB8MXxzZWFyY2h8MXx8aG90ZWwlMjByb29tJTIwamFwYW4lMjB2aWV3fGVufDF8MHx8fDE3OTA1MDMzMDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageCredit": {
+        "source": "unsplash",
+        "authorName": "Linh Diep",
+        "authorUrl": "https://unsplash.com/@photosbymld?utm_source=blog-admin&utm_medium=referral",
+        "photoUrl": "https://unsplash.com/photos/silhouette-of-a-person-standing-by-sliding-doors-ndtvZLdQqnc?utm_source=blog-admin&utm_medium=referral",
+        "siteUrl": "https://unsplash.com?utm_source=blog-admin&utm_medium=referral"
+      }
+    }
+  ]
 }
