@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/support.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/support",
+      "destination": "/",
+      "permanent": true
+    }
+  ]
+}
