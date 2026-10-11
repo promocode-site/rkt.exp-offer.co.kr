@@ -173,6 +173,12 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,Bl
 .rx-foot a{color:#f4f1ea;text-decoration:none;border-bottom:1px solid #6b746a}
 .rx-foot a:hover,.rx-foot a:focus-visible{border-bottom-color:#f4f1ea}
 .rx-foot-bot{max-width:1160px;margin:0 auto;padding:16px 20px 32px;border-top:1px solid #3d474d;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;font-size:13px;color:#aab0a2}
+.rx-pages{grid-column:1 / -1;display:flex;gap:8px;overflow-x:auto;white-space:nowrap;scrollbar-width:none;border-top:1px solid #6b746a;padding-top:16px}
+.rx-pages::-webkit-scrollbar{display:none}
+.rx-pages a{display:inline-block;flex:none;color:#f4f1ea;text-decoration:none;font-weight:700;font-size:14px;padding:7px 12px;border-radius:999px;border:1.5px solid #6b746a}
+.rx-pages a:hover,.rx-pages a:focus-visible,.rx-pages a[aria-current="page"]{border-color:#f4f1ea;background:#f4f1ea;color:var(--ink)}
+.rc-more{margin:32px 0 0;text-align:center}
+@media (max-width:360px){.rx-top,.rx-nav,main,.rx-foot{overflow-x:clip}}
 @media (max-width:860px){
 .rx-in{grid-template-columns:1fr;padding:30px 16px 28px}
 .rx-foot-in{grid-template-columns:1fr 1fr}
@@ -511,6 +517,10 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,Bl
 <div><dt>지역별 비교</dt><dd>9곳</dd></div>
 </dl>
 <a class="rx-go" href="https://app.ac/YbwMP3l13" target="_blank" rel="nofollow sponsored noopener">라쿠텐 트래블 일본 숙소 예약</a>
+<nav class="rx-pages" aria-label="페이지 메뉴">
+<a href="./" aria-current="page">홈</a>
+<a href="coupon/">라쿠텐트래블 쿠폰</a>
+</nav>
 </div>
 </header>
 <nav class="rx-nav" aria-label="라쿠텐 트래블 할인 정보 목차">
@@ -711,6 +721,7 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,Bl
 <p>할인코드와 쿠폰을 한 예약에 겹쳐 쓸 수 있는지는 <a href="#faq">라쿠텐 트래블 할인코드 FAQ</a>, Visa 전용 할인코드와 카드사 즉시할인은 <a href="#cards">라쿠텐 트래블 카드 할인</a>에 정리했습니다.</p>
 </div>
 </div>
+<p class="rc-more"><a class="rc-cta" href="coupon/">라쿠텐트래블 쿠폰 전체 보기</a></p>
 </div>
 </section>
 <div class="rx-sep" aria-hidden="true" data-n="02 / 05"><span class="rx-ring"></span></div>
@@ -1359,6 +1370,20 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,Bl
 <li><a href="https://app.ac/YbwMP3l13" target="_blank" rel="nofollow sponsored noopener">라쿠텐 트래블 예약하기</a></li>
 </ul>
 </div>
+<!--@FOOTER-LINKS-->
+<div>
+<p class="rx-foot-col">다른 할인코드</p>
+<ul>
+<li><a href="tripcom/">트립닷컴 할인코드</a></li>
+<li><a href="klook/">클룩 할인코드</a></li>
+<li><a href="agoda/">아고다 할인코드</a></li>
+<li><a href="myrealtrip/">마이리얼트립 할인코드</a></li>
+<li><a href="hotelscom/">호텔스닷컴 할인코드</a></li>
+<li><a href="kkday/">kkday 할인코드</a></li>
+<li><a href="usimsa/">유심사 할인쿠폰</a></li>
+</ul>
+</div>
+<!--@/FOOTER-LINKS-->
 </div>
 <div class="rx-foot-bot">
 <p>© 2026 라쿠텐 트래블 할인코드 · rkt.exp-offer.co.kr</p>
