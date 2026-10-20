@@ -569,6 +569,7 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,Bl
 </dl>
 <p class="rc-calc">40만 원까지는 25%가 그대로 빠지고, 그 이상은 10만 원에서 멈춥니다. 60만 원 예약이면 실할인율 <strong>16.7%</strong>, 90만 원이면 <strong>11.1%</strong>.</p>
 <p class="rc-route">호텔스컴바인에서 라쿠텐 트래블 상품을 골라 넘어간 예약에만 적용되는 제휴 코드</p>
+<a class="rc-go" href="https://app.ac/YbwMP3l13" target="_blank" rel="nofollow sponsored noopener" data-copy="RTHC07">할인코드 복사하고 발급</a>
 </article>
 </li>
 <li>
@@ -784,6 +785,7 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,Bl
 <h3>Visa 카드 8% 할인코드</h3>
 <p class="rq-chip">할인코드: <code>VISAGLOBAL8</code></p>
 <p>한도 ¥10,000이라 이 예약에서는 8%가 끝까지 적용됩니다. 할인율은 낮아도 한도가 넉넉해 KB 일반 10%를 앞섭니다.</p>
+<a class="rc-go" href="https://app.ac/YbwMP3l13" target="_blank" rel="nofollow sponsored noopener" data-copy="VISAGLOBAL8">할인코드 복사하고 발급</a>
 </div>
 <dl class="rq-num"><dt>할인액</dt><dd>50,112원</dd></dl>
 <dl class="rq-num"><dt>해외 이용 수수료</dt><dd>7,204원</dd></dl>
@@ -821,6 +823,7 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,Bl
 <h3>Visa 카드 5% 할인코드</h3>
 <p class="rq-chip">할인코드: <code>VISAGLOBAL5</code></p>
 <p>PC 웹에서 예약할 때 Visa 카드로 받을 수 있는 할인입니다. 같은 예약을 앱에서 VISAGLOBAL8로 결제하면 최종 청구액이 19,027원 줄어듭니다.</p>
+<a class="rc-go" href="https://app.ac/YbwMP3l13" target="_blank" rel="nofollow sponsored noopener" data-copy="VISAGLOBAL5">할인코드 복사하고 발급</a>
 </div>
 <dl class="rq-num"><dt>할인액</dt><dd>31,320원</dd></dl>
 <dl class="rq-num"><dt>해외 이용 수수료</dt><dd>7,439원</dd></dl>
@@ -1390,5 +1393,47 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,Bl
 <a href="#top">처음으로</a>
 </div>
 </footer>
+<script>
+(function () {
+  function fallbackCopy(text) {
+    var active = document.activeElement;
+    var field = document.createElement('textarea');
+    field.value = text;
+    field.setAttribute('readonly', '');
+    field.style.cssText = 'position:fixed;top:0;left:-9999px';
+    document.body.appendChild(field);
+    field.select();
+    var copied = false;
+    try { copied = document.execCommand('copy'); } catch (error) {}
+    field.remove();
+    if (active && active.focus) active.focus({ preventScroll: true });
+    return copied;
+  }
+
+  document.querySelectorAll('a[data-copy]').forEach(function (link) {
+    var label = link.textContent;
+    var timer;
+    function report(copied) {
+      link.textContent = copied ? '복사 완료 · 다시 발급' : '코드를 직접 복사해 주세요';
+      clearTimeout(timer);
+      timer = setTimeout(function () { link.textContent = label; }, 3000);
+    }
+    link.addEventListener('click', function (event) {
+      if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      var code = link.getAttribute('data-copy');
+      // Keep native link navigation independent of clipboard permission and timing.
+      try {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(code).then(function () {
+            report(true);
+          }, function () { report(fallbackCopy(code)); });
+        } else {
+          report(fallbackCopy(code));
+        }
+      } catch (error) { report(fallbackCopy(code)); }
+    });
+  });
+}());
+</script>
 </body>
 </html>
